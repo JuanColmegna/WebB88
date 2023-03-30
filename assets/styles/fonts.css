@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'fibra_oneultrabold_it';
+    src: url('../fonts/crayon_bold-webfont.woff2') format('woff2'),
+        url('../fonts/crayon_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,600;1,600&display=swap');

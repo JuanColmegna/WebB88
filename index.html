@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web de Barrio 88">
+    <title>Barrio 88</title>
+    <!-- Preload -->
+    <link rel="preload" href="./assets/styles/fonts.css" as="style" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+
+    <link rel="preload" href="./assets/styles/normalize.css" as="style">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+
+    <link rel="preload" href="./assets/styles/styles.css" as="style">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Menu Hidden -->
+        <div class="menu-hidden">
+            <div class="menu-link"><a href="#"><img class="logo" src="./assets/img/logo.svg"
+                        alt="Logo de Barrio 88"></a>
+            </div>
+            <button class="abrir-menu no-padding" id="abrir"><img src="./assets/img/botoneraOff.svg"
+                    alt="boton para abrir menu" class="boton-abrir"></button>
+        </div>
+
+        <!-- Menu Visible -->
+        <nav class="nav no-margin" id="nav">
+            <div class="header-menu">
+                <div class="menu-link"><a href="#"><img class="logo-menu" src="./assets/img/logoNavMenu.svg"
+                            alt="Logo Barrio88"></a>
+                </div>
+                <button class="cerrar-menu no-padding" id="cerrar"><img src="./assets/img/botoneraOn.svg"
+                        alt="boton para cerrar menu"></button>
+            </div>
+
+            <!-- Navbar -->
+            <ul class="nav-list no-padding">
+                <li class="nav-text nav-text__primero"><a class="nav-enlace nav-enlace__rojo" href="#">Súmate</a></li>
+                <li class="nav-text nav-text__segundo"><a class="nav-enlace" href="#">Quiénes somos</a></li>
+                <li class="nav-text nav-text__tercero"><a class="nav-enlace" href="#">Proyectos</a></li>
+                <li class="nav-text nav-text__cuarto"><a class="nav-enlace" href="#">Vota!</a></li>
+
+                <!-- Redes Sociales -->
+                <li class="nav-redes">
+                    <ul class="nav-svg no-padding">
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoInstagram.svg"
+                                    alt="Logo de instagram"></a></li>
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoFacebook.svg"
+                                    alt="Logo de Facebook"></a></li>
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoYouTube.svg"
+                                    alt="Logo de YouTube"></a></li>
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoTwitter.svg"
+                                    alt="Logo de Twitter"></a></li>
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoWhatsApp.svg"
+                                    alt="Logo de WhatsApp"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+        <div class="hero-div contenedor">
+            
+            <!-- Imagen con boton para realizar formulario -->
+            
+            <h1 class="hero-title">
+                Puede ser distinto y vos podes <button class="title-button" id="title-button">formar parte</button>
+            </h1>
+
+            <div class="formulario-sumate" id="formulario-sumate">
+                
+                <div class="div-boton-cerrar"><button class="boton-cerrar-sumate" id="boton-cerrar-sumate"><img src="./assets/img/botonCerrarSumate.svg" alt="Cerrar formulario sumate"></button></div>
+                
+                <!-- Formulario extraído de mautic -->
+
+                <div id="mauticform_wrapper_sumateweb2023" class="mauticform_wrapper">
+                    <form autocomplete="false" role="form" method="post"
+                        action="https://mail.barrio88.com.ar/form/submit?formId=83" id="mauticform_sumateweb2023"
+                        data-mautic-form="sumateweb2023" enctype="multipart/form-data" web2023>
+                        <div class="mauticform-error" id="mauticform_sumateweb2023_error"></div>
+                        <div class="mauticform-message" id="mauticform_sumateweb2023_message"></div>
+                        <div class="mauticform-innerform">
+                            <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+                                <div id="mauticform_sumateweb2023_nombre" data-validate="nombre"
+                                    data-validation-type="text"
+                                    class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
+                                    <label id="mauticform_label_sumateweb2023_nombre"
+                                        for="mauticform_input_sumateweb2023_nombre"
+                                        class="mauticform-label">Nombre</label>
+                                    <input id="mauticform_input_sumateweb2023_nombre" name="mauticform[nombre]" value=""
+                                        class="mauticform-input" type="text">
+                                    <span class="mauticform-errormsg" style="display: none;">Requerido</span>
+                                </div>
+
+                                <div id="mauticform_sumateweb2023_apellido" data-validate="apellido"
+                                    data-validation-type="text"
+                                    class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
+                                    <label id="mauticform_label_sumateweb2023_apellido"
+                                        for="mauticform_input_sumateweb2023_apellido"
+                                        class="mauticform-label">Apellido</label>
+                                    <input id="mauticform_input_sumateweb2023_apellido" name="mauticform[apellido]"
+                                        value="" class="mauticform-input" type="text">
+                                    <span class="mauticform-errormsg" style="display: none;">Requerido</span>
+                                </div>
+
+                                <div id="mauticform_sumateweb2023_telefono" data-validate="telefono"
+                                    data-validation-type="tel"
+                                    class="mauticform-row mauticform-tel mauticform-field-3 mauticform-required">
+                                    <label id="mauticform_label_sumateweb2023_telefono"
+                                        for="mauticform_input_sumateweb2023_telefono"
+                                        class="mauticform-label">Teléfono</label>
+                                    <input id="mauticform_input_sumateweb2023_telefono" name="mauticform[telefono]"
+                                        value="" class="mauticform-input" type="tel">
+                                    <span class="mauticform-errormsg" style="display: none;">Requerido</span>
+                                </div>
+
+                                <div id="mauticform_sumateweb2023__me_sumo"
+                                    class="mauticform-row mauticform-button-wrapper mauticform-field-4">
+                                    <button type="submit" name="mauticform[_me_sumo]"
+                                        id="mauticform_input_sumateweb2023__me_sumo" value=""
+                                        class="mauticform-button btn btn-default">✊ Me Sumo!</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="mauticform[formId]" id="mauticform_sumateweb2023_id" value="83">
+                        <input type="hidden" name="mauticform[return]" id="mauticform_sumateweb2023_return" value="">
+                        <input type="hidden" name="mauticform[formName]" id="mauticform_sumateweb2023_name" value="sumateweb2023">
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <script src="./assets/js/modernizr.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
