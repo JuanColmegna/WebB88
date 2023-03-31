@@ -26,6 +26,7 @@ body {
     font-size: 1.5rem;
     line-height: 2;
     margin: 0;
+    line-height: 2rem;
 }
 
 /* globales */
@@ -378,10 +379,7 @@ img {
     z-index: 1;
 }
 
-.mauticform_wrapper{
-    grid-area: 1 / 1 / 7 / 7;
-    width: 100%;
-}
+/* Botón Cerrar Formulario */
 
 .div-boton-cerrar{
     grid-area: 1 / 6 / 2 / 7;
@@ -394,9 +392,79 @@ img {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: #6AB391;
+    background-color: var(--secundario);
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.mauticform_wrapper{
+    grid-area: 1 / 1 / 7 / 7;
+    width: 100%;
+    padding: 2rem;
+    font-family: var(--fuenteHeading);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mauticform_wrapper label{
+    display: block;
+    width: 100%;
+}
+
+.mauticform_wrapper input {
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    height: 2.5rem;
+}
+
+.mauticform_wrapper button {
+    background-color: var(--secundario);
+    width: 100%;
+    border: 2px solid var(--negro);
+    border-radius: 1rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.mauticform_wrapper button:hover{
+    color: var(--blanco);
+    border: 2px solid var(--blanco);
+}
+
+/* Main */
+
+/* Seccion Somos */
+.main {
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.titulo-principal{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--primario);
+}
+
+
+.parrafo-main{
+    color: var(--primario);
+    font-style: italic;
+    font-size: 1.7rem;
+    margin: 3rem;
+}
+
+.texto-rojo{
+    color: var(--rojo);
+}
+
+/* Seccion Como Lo Hacemos */
+
