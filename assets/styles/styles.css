@@ -274,6 +274,10 @@ img {
     height: auto;
 }
 
+.img-redes{
+    width: 100%;
+}
+
 .abrir-menu{
     display: block;
     min-width: 3rem;
@@ -508,4 +512,20 @@ img {
     color: var(--primario);
     text-align: left;
     font-size: 1.8rem;
+}
+
+/* Footer */
+.footer{
+    line-height: 0;
+    height: auto;
+}
+
+.contenedor-footer {
+    background-color: #306586;
+    height: 30vh;
+}
+
+.parrafo-footer{
+    color: var(--blanco);
+    text-align: center;
 }
