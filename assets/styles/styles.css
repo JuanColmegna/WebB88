@@ -14,6 +14,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
 }
 
 *, *:before, *:after {
@@ -115,6 +116,7 @@ img {
 .logo,
 .logo-menu {
     min-width: 20rem;
+    height: auto;
     margin:0 auto;
 }
 
@@ -224,6 +226,7 @@ img {
 }
 
 .nav-text{
+    margin-top: 1rem;
     padding: 1.5rem;
     transform: skewY(-4.2deg);
 }
@@ -248,9 +251,9 @@ img {
 
 .nav-text:first-child{
     background-color: #6AB391;
-    width: 150%;
+    width: 100%;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: 5px;
 }
 
 @media (min-width: 1200px) {
@@ -268,6 +271,7 @@ img {
 
 .nav-icon {
     width: 5rem;
+    height: auto;
 }
 
 .abrir-menu{
@@ -468,3 +472,40 @@ img {
 
 /* Seccion Como Lo Hacemos */
 
+.titulo-segundo{
+    color: var(--rojo);
+    text-transform: uppercase;
+}
+
+.elemento-lista-cmh{
+    padding: 1rem;
+    color: var(--primario);
+    list-style-image: url(../img/list-icon.svg);
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+/* Seccion Ejes */
+
+.titulo-ejes{
+    text-transform: uppercase;
+    color: var(--primario);
+}
+
+.subtitulos-ejes{
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    color: var(--rojo);
+    text-align: left;
+    font-family: var(--fuenteParrafos);
+    font-style: italic;
+    line-height: 2.3rem;
+}
+
+.parrafo-ejes{
+    margin: 0;
+    color: var(--primario);
+    text-align: left;
+    font-size: 1.8rem;
+}
