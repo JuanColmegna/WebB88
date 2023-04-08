@@ -7,6 +7,7 @@
     --rojo: #C9494E;
     --negro: #000000;
     --blanco: #FFFFFF;
+    --verde: #27B491;
 }
 
 /* reset */
@@ -514,10 +515,72 @@ img {
     font-size: 1.8rem;
 }
 
+/* Sección Cards */
+
+.card{
+    background-color: var(--verde);
+    transform: skewY(-4.2deg);
+    border-radius: 2rem;
+    height: 50rem;
+}
+
+
+.titulo-cards{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primario);
+}
+
+.webp .contenedor-img {
+    background-image: url(../img/img-card1.webp);
+}
+
+.nowebp .contenedor-img {
+    background-image: url(../img/img-card1.png);
+}
+
+.contenedor-img{
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: skewY(4.2deg);
+}
+
+.texto-card {
+    width: 80%;
+    margin: 0 auto;
+    transform: skewY(4.2deg);
+    color: var(--blanco);
+}
+
+.titulo-card{
+    margin: 1.5rem 0 0 0;
+    text-transform: uppercase;
+}
+
+.parrafo-card{
+    margin: .5rem 0;
+    font-weight: normal;
+    text-align: left;
+}
+
+.parrafo-negrita{
+    font-weight: bold;
+}
+
+.enlace-card{
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--blanco);
+}
+
+
 /* Footer */
 .footer{
     line-height: 0;
-    height: auto;
+    height: 12rem;
 }
 
 .contenedor-footer {
