@@ -1,5 +1,6 @@
 // Abrir - Cerrar (MENU)
 
+const noScroll = document.querySelector("#html");
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
@@ -7,10 +8,12 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", ()=> {
     nav.classList.add("visible");
+    noScroll.classList.add("no-scroll");
 })
 
 cerrar.addEventListener("click", ()=>{
     nav.classList.remove("visible");
+    noScroll.classList.remove("no-scroll");
 })
 
 // Abrir - Cerrar (Sumate)

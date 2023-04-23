@@ -1,5 +1,83 @@
-<svg width="50" height="52" viewBox="0 0 50 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24.73 0.880005C12.58 0.880005 2.72 10.17 2.72 21.63C2.72 26.86 4.78 31.63 8.16 35.28L8.15 35.29L8.25 35.39C8.84 36.01 9.46 36.6 10.12 37.15L24.7 50.9L39.11 37.31C43.77 33.51 46.72 27.89 46.72 21.63C46.74 10.17 36.89 0.880005 24.73 0.880005Z" fill="#9FBFB7"/>
-<path d="M20.1799 28.0795L24.5398 23.7197L28.8996 28.0795L31.0795 25.8996L26.7197 21.5398L31.0795 17.1799L28.8996 15L24.5398 19.3598L20.1799 15L18 17.1799L22.3598 21.5398L18 25.8996L20.1799 28.0795Z" fill="#306586"/>
-<path d="M24.4167 36.8333C32.9174 36.8333 39.8333 29.9174 39.8333 21.4167C39.8333 12.9159 32.9174 6 24.4167 6C15.9159 6 9 12.9159 9 21.4167C9 29.9174 15.9159 36.8333 24.4167 36.8333ZM24.4167 9.08333C31.217 9.08333 36.75 14.6164 36.75 21.4167C36.75 28.217 31.217 33.75 24.4167 33.75C17.6164 33.75 12.0833 28.217 12.0833 21.4167C12.0833 14.6164 17.6164 9.08333 24.4167 9.08333Z" fill="#306586"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.98 52.05" style="enable-background:new 0 0 45.98 52.05;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9FBFB7;}
+	.st1{fill:#306586;}
+	.st2{fill:none;stroke:#A6CC9F;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:#A6CC9F;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#6AB391;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st7{display:none;}
+	.st8{display:inline;opacity:0.28;fill:#C9494E;}
+	.st9{display:inline;opacity:0.28;fill:#A6CC9F;}
+	.st10{fill:none;stroke:#9FBFB7;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#A6CC9F;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st12{fill:#C9494E;}
+	.st13{fill:none;stroke:#9FBFB7;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#9FBFB7;stroke-width:3;stroke-miterlimit:10;}
+	.st15{fill:#FFFFFF;stroke:#666666;}
+	.st16{fill:none;stroke:#DE928D;stroke-width:2;stroke-miterlimit:10;}
+	.st17{clip-path:url(#SVGID_16_);fill:url(#SVGID_17_);}
+	.st18{fill:#F4F6FA;}
+	.st19{fill:#2BBFE8;}
+	.st20{fill:#7E68C6;}
+	.st21{fill:#CB479C;}
+	.st22{fill:#FA9F3C;}
+	.st23{fill:#F7BB40;}
+	.st24{fill:#2A3942;}
+	.st25{fill:#D7DEED;}
+	.st26{fill:#57606F;}
+	.st27{fill:#FEBE76;}
+	.st28{fill:#AFB9D2;}
+	.st29{fill:#E8A664;}
+	.st30{fill:#FCD884;}
+	.st31{fill:#EABF6A;}
+	.st32{fill:#A28671;}
+	.st33{fill:#60534A;}
+	.st34{fill:#73665C;}
+	.st35{fill:#8E725D;}
+	.st36{fill:#FFE678;}
+	.st37{fill:#B7C9F1;}
+	.st38{fill:#3E3E3F;}
+	.st39{fill:#EFF3F6;}
+	.st40{fill:#DBDFE0;}
+	.st41{fill:#FF7979;}
+	.st42{fill:#414A56;}
+	.st43{fill:#747371;}
+	.st44{fill:#5B5A57;}
+	.st45{fill:#E32929;}
+	.st46{fill:#FD3B3B;}
+	.st47{opacity:0.2;fill:#FFFFFF;}
+	.st48{fill:none;stroke:#000000;stroke-width:1.8663;stroke-miterlimit:10;}
+	.st49{fill:none;}
+	.st50{fill:#231F20;}
+	.st51{fill:none;stroke:#9FBFB7;stroke-width:10;stroke-miterlimit:10;}
+	.st52{fill:#FD61AD;}
+	.st53{fill:#333333;}
+	.st54{fill:#58476B;}
+	.st55{fill:#F5A2A6;}
+	.st56{fill:#FFE475;}
+	.st57{fill:#78C3D6;}
+	.st58{fill:#9BC9FF;}
+	.st59{fill:#1E81CE;}
+	.st60{fill:#212121;}
+	.st61{fill:#E04A4E;}
+</style>
+<g id="Capa_1">
+</g>
+<g id="margenes" class="st7">
+</g>
+<g id="Capa_3">
+	<g>
+		<g>
+			<path class="st2" d="M23.03,1C10.88,1,1.02,10.28,1.02,21.74c0,5.23,2.06,10,5.44,13.65L6.46,35.4l0.1,0.1
+				c0.59,0.62,1.21,1.21,1.87,1.76l14.58,13.75l14.41-13.59c4.66-3.8,7.61-9.42,7.61-15.68C45.04,10.28,35.19,1,23.03,1z"/>
+		</g>
+		<line class="st11" x1="16" y1="30.91" x2="31.27" y2="15.63"/>
+		<line class="st11" x1="16" y1="15.63" x2="31.27" y2="30.91"/>
+	</g>
+</g>
 </svg>

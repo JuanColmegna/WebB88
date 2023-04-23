@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,6 @@
 
     <link rel="preload" href="./assets/styles/styles.css" as="style">
     <link rel="stylesheet" href="./assets/styles/styles.css">
-
-
 <body>
     <!-- Header -->
     <header class="header">
@@ -27,7 +25,7 @@
                         alt="Logo de Barrio 88"></a>
             </div>
             <button class="abrir-menu no-padding" id="abrir"><img src="./assets/img/botoneraOff.svg"
-                    alt="boton para abrir menu" class="boton-abrir"></button>
+                    alt="boton para abrir menu" class="img-abrir-menu"></button>
         </div>
 
         <!-- Menu Visible -->
@@ -37,7 +35,7 @@
                             alt="Logo Barrio88"></a>
                 </div>
                 <button class="cerrar-menu no-padding" id="cerrar"><img src="./assets/img/botoneraOn.svg"
-                        alt="boton para cerrar menu"></button>
+                        alt="boton para cerrar menu" class="img-cerrar-menu"></button>
             </div>
 
             <!-- Navbar -->
@@ -73,9 +71,9 @@
             
             <!-- Imagen con boton para realizar formulario -->
             
-            <h1 class="hero-title">
-                Puede ser distinto y vos podes <button class="title-button" id="title-button">formar parte</button>
-            </h1>
+            <h2 class="hero-title">
+                Hoy más que nunca <button class="title-button" id="title-button">hagamos barrio</button>
+            </h2>
 
             <div class="formulario-sumate" id="formulario-sumate">
                 
@@ -145,9 +143,12 @@
     <!-- Main -->
     <main class="main contenedor" id="main">
         <section class="quienes-somos">
-            <h1 class="titulo-principal">
-                Somos <span class="texto-rojo">88</span>
-            </h1>
+            <div class="titulo">
+                <h1 class="titulo-principal">
+                    Somos
+                </h1>
+                <img  class="logo-titulos" src="./assets/img/barrio88Rojo.svg" alt="Logo Barrio 88">
+            </div>
             <p class="parrafo-main">
                 Una opción <span class="texto-rojo">política nueva</span>, una alternativa nacida desde abajo que busca construir una ciudad con más oportunidades para todos.
             </p>
@@ -156,28 +157,34 @@
             </p>
         </section>
         <section class="como-lo-hacemos">
-            <h2 class="titulo-segundo">
-                Cómo lo hacemos 88
-            </h2>
+            <div class="div-titulo-clh">
+                <h2 class="titulo-clh">
+                    Cómo lo hacemos
+                </h2>
+                <img  class="logo-titulos" src="./assets/img/barrio88Rojo.svg" alt="Logo Barrio 88">
+            </div>
             <ul class="lista-como-lo-hacemos">
-                <li class="elemento-lista-cmh">
+                <li class="elemento-lista-clh">
                     Con autonomía e independencia de los partidos tradicionales
                 </li>
-                <li class="elemento-lista-cmh">
+                <li class="elemento-lista-clh">
                     Con creatividad e ingenio, proponiendo soluciones diferentes a las que no funcionan
                 </li>
-                <li class="elemento-lista-cmh">
+                <li class="elemento-lista-clh">
                     En comunidad, trabajando en equipo y escuchando a la gente
                 </li>
-                <li class="elemento-lista-cmh">
+                <li class="elemento-lista-clh">
                     Con inclusión, porque queremos construir una Santa Fe donde ningún barrio quede afuera
                 </li>
             </ul>
         </section>
         <section class="ejes contenedor">
-            <h2 class="titulo-ejes">
-                Ejes <span class="texto-rojo">88</span>
-            </h2>
+            <div class="div-titulo-ejes">
+                <h2 class="titulo-ejes">
+                    Ejes
+                </h2>
+                <img  class="logo-titulos" src="./assets/img/barrio88Rojo.svg" alt="Logo Barrio 88">
+            </div>
             <h3 class="subtitulos-ejes">Soluciones reales</h3>
             <p class="parrafo-ejes">
                 Trabajamos para brindar soluciones reales a los problemas de la gente de cada barrio, aquellos que los políticos tradicionales (los mismos de siempre) no le cumplen o no los quieren escuchar.
@@ -193,7 +200,9 @@
         </section>
     </main>
     <section class="cards contenedor">
-        <h2 class="titulo-cards">Otra forma de hacer política 88</h2>
+        <div class="div-titulo-cards">
+            <h2 class="titulo-cards">Otra forma de hacer política <img  class="logo-titulos" src="./assets/img/barrio88Azul.svg" alt="Logo Barrio 88"></h2>
+        </div>
         <div class="card">
             <div class="contenedor-img"></div>
             <div class="texto-card">
@@ -257,7 +266,7 @@
                         </form>
                     </div> 
                 </div> <!-- Acá termina el formlurario -->
-                <li class="nav-redes">
+                <div class="nav-redes-footer">
                     <ul class="nav-svg no-padding">
                         <li class="nav-icon"><a href="#"><img src="./assets/img/logoInstagram.svg"
                                     alt="Logo de instagram" class="img-redes"></a></li>
@@ -270,7 +279,7 @@
                         <li class="nav-icon"><a href="#"><img src="./assets/img/logoWhatsApp.svg"
                                     alt="Logo de WhatsApp" class="img-redes"></a></li>
                     </ul>
-                </li>
+                </div>
                 <p class="parrafo-footer">
                     Barrio 88 - Santa Fe
                 </p>
