@@ -15,7 +15,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-
 }
 
 *, *:before, *:after {
@@ -26,7 +25,6 @@ body {
     font-family: var(--fuenteParrafos);
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 2;
     margin: 0;
     line-height: 2rem;
 }
@@ -48,11 +46,9 @@ body::-webkit-scrollbar-thumb{
     border: 2px solid var(--secundario);
 }
 
-
 .no-scroll{
     overflow-y: hidden;
 }
-
 
 .contenedor{
     width: min(90%, 120rem);
@@ -508,13 +504,16 @@ img {
 
 .parrafo-main{
     color: var(--primario);
-    font-style: italic;
-    font-size: 1.7rem;
+    font-size: 2.6rem;
     margin: 0 auto 1.5rem auto;
+    font-weight: 400;
+    line-height: 3rem;
 }
 
 .texto-rojo{
     color: var(--rojo);
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* Seccion Como Lo Hacemos */
@@ -545,12 +544,13 @@ img {
 
 
 .elemento-lista-clh{
-    padding: .4rem;
+    margin: 1rem .5rem;
     color: var(--primario);
     list-style-image: url(../img/list-icon.svg);
-    font-size: 1.7rem;
-    line-height: 2rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
     text-align: left;
+    font-weight: 400;
 }
 
 /* Seccion Ejes */
@@ -571,8 +571,8 @@ img {
 }
 
 .subtitulos-ejes{
-    margin: 2rem 0 0 0;
-    font-size: 2rem;
+    margin: 2rem auto;
+    font-size: 2.6rem;
     color: var(--rojo);
     text-align: left;
     font-family: var(--fuenteParrafos);
@@ -581,11 +581,12 @@ img {
 }
 
 .parrafo-ejes{
-    letter-spacing: .009rem;
     margin: 0;
     color: var(--primario);
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 3rem;
 }
 
 /* Sección Cards */
