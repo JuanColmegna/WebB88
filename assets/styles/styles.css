@@ -31,21 +31,6 @@ body {
 
 /* globales */
 
-body::-webkit-scrollbar{
-    width: 1rem;
-}
-
-body::-webkit-scrollbar-track{
-    background-color: var(--secundario);
-}
-
-
-body::-webkit-scrollbar-thumb{
-    background-color: var(--primario);
-    border-radius: 2rem;
-    border: 2px solid var(--secundario);
-}
-
 .no-scroll{
     overflow-y: hidden;
 }
@@ -540,17 +525,26 @@ img {
 
 .lista-como-lo-hacemos{
     margin: 0;
+    padding: 0 0 0 2.5rem;
 }
 
 
 .elemento-lista-clh{
-    margin: 1rem .5rem;
+    margin: 1.5rem 0;
     color: var(--primario);
-    list-style-image: url(../img/list-icon.svg);
+    list-style: none;
     font-size: 2.6rem;
     line-height: 3rem;
     text-align: left;
     font-weight: 400;
+}
+
+.elemento-lista-clh::before{
+    content: url(../img/list-icon.svg);
+    width: 1.9rem;
+    display: inline-block;
+    height: 20px;
+    margin-left: -20px;
 }
 
 /* Seccion Ejes */
@@ -571,13 +565,14 @@ img {
 }
 
 .subtitulos-ejes{
-    margin: 2rem auto;
+    margin: 2rem 0 1rem 0;
     font-size: 2.6rem;
     color: var(--rojo);
     text-align: left;
     font-family: var(--fuenteParrafos);
     font-style: italic;
     line-height: 2.3rem;
+    font-weight: bold;
 }
 
 .parrafo-ejes{
