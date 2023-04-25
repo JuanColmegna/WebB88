@@ -586,35 +586,48 @@ img {
 
 /* Sección Cards */
 
+.carrousel{
+    overflow-x: hidden;
+}
+
 .contenedor-carrousel{
     width: 400%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    transition: all .6s ease-in-out;
+    transform: translateX(0%);
 }
+
 
 .botonera-carrousel{
     width: 100%;
-    background-color: #C9494E;
     padding: 1em;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 .boton{
     width: 4em;
     height: 4em;
-    background-image: url(../img/iconoLaBancaActivo.svg);
+    background-image: url(../img/iconoLaBancaInactivo.svg);
     margin: 1em;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.boton.activo{
+    background-image: url(../img/iconoLaBancaActivo.svg);
 }
 
 
 .card{
     width: calc(100% / 4);
-    margin: 2rem;
+    margin: 1rem;
     background-color: var(--verde);
     transform: skewY(-4.2deg);
     border-radius: 2rem;
