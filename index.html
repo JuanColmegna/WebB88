@@ -81,7 +81,7 @@
                 
                 <!-- Formulario extraído de mautic -->
 
-                <div id="mauticform_wrapper_sumateweb2023" class="mauticform_wrapper">
+                <div id="mauticform_wrapper_sumateweb2023" class="mauticform-sumate">
                     <form autocomplete="false" role="form" method="post"
                         action="https://mail.barrio88.com.ar/form/submit?formId=83" id="mauticform_sumateweb2023"
                         data-mautic-form="sumateweb2023" enctype="multipart/form-data" web2023>
@@ -92,42 +92,41 @@
 
                                 <div id="mauticform_sumateweb2023_nombre" data-validate="nombre"
                                     data-validation-type="text"
-                                    class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
-                                    <label id="mauticform_label_sumateweb2023_nombre"
-                                        for="mauticform_input_sumateweb2023_nombre"
-                                        class="mauticform-label">Nombre</label>
-                                    <input id="mauticform_input_sumateweb2023_nombre" name="mauticform[nombre]" value=""
-                                        class="mauticform-input" type="text">
-                                    <span class="mauticform-errormsg" style="display: none;">Requerido</span>
+                                    >
+                                    <!-- <label id="mauticform_label_sumateweb2023_nombre"
+                                        for="mauticform_input_sumateweb2023_nombre">Nombre</label> -->
+                                    <input id="mauticform_input_sumateweb2023_nombre" name="mauticform[nombre]" value="" placeholder="Nombre"
+                                        type="text" required>
+                                    <!-- <span class="mauticform-errormsg" style="display: none;">Requerido</span> -->
                                 </div>
 
                                 <div id="mauticform_sumateweb2023_apellido" data-validate="apellido"
                                     data-validation-type="text"
-                                    class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
-                                    <label id="mauticform_label_sumateweb2023_apellido"
+                                    >
+                                    <!-- <label id="mauticform_label_sumateweb2023_apellido"
                                         for="mauticform_input_sumateweb2023_apellido"
-                                        class="mauticform-label">Apellido</label>
+                                        >Apellido</label> -->
                                     <input id="mauticform_input_sumateweb2023_apellido" name="mauticform[apellido]"
-                                        value="" class="mauticform-input" type="text">
-                                    <span class="mauticform-errormsg" style="display: none;">Requerido</span>
+                                        value="" type="text" placeholder="Apellido" required>
+                                    <!-- <span class="mauticform-errormsg" style="display: none;">Requerido</span> -->
                                 </div>
 
                                 <div id="mauticform_sumateweb2023_telefono" data-validate="telefono"
                                     data-validation-type="tel"
-                                    class="mauticform-row mauticform-tel mauticform-field-3 mauticform-required">
-                                    <label id="mauticform_label_sumateweb2023_telefono"
+                                    >
+                                    <!-- <label id="mauticform_label_sumateweb2023_telefono"
                                         for="mauticform_input_sumateweb2023_telefono"
-                                        class="mauticform-label">Teléfono</label>
+                                        class="mauticform-label">Teléfono</label> -->
                                     <input id="mauticform_input_sumateweb2023_telefono" name="mauticform[telefono]"
-                                        value="" class="mauticform-input" type="tel">
-                                    <span class="mauticform-errormsg" style="display: none;">Requerido</span>
+                                        value="" type="tel" placeholder="Telefono" required>
+                                    <!-- <span class="mauticform-errormsg" style="display: none;">Requerido</span> -->
                                 </div>
 
                                 <div id="mauticform_sumateweb2023__me_sumo"
                                     class="mauticform-row mauticform-button-wrapper mauticform-field-4">
                                     <button type="submit" name="mauticform[_me_sumo]"
                                         id="mauticform_input_sumateweb2023__me_sumo" value=""
-                                        class="mauticform-button btn btn-default">✊ ¡Me Sumo!</button>
+                                        >✊ ¡Me Sumo!</button>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +135,7 @@
                         <input type="hidden" name="mauticform[return]" id="mauticform_sumateweb2023_return" value="">
                         <input type="hidden" name="mauticform[formName]" id="mauticform_sumateweb2023_name" value="sumateweb2023">
                     </form>
-                </div>
+                </div> <!-- aquí termina el formulario -->
             </div>
     </section>
 
@@ -199,6 +198,8 @@
             </p>
         </section>
     </main>
+
+    <!-- Otra forma de hacer política -->
     <section class="cards contenedor">
         <div class="div-titulo-cards">
             <h2 class="titulo-cards">Otra forma de hacer política <img  class="logo-titulos" src="./assets/img/barrio88Azul.svg" alt="Logo Barrio 88"></h2>
@@ -262,13 +263,20 @@
             </ul>
         </div>
     </section>
+
+    <!-- Encuesta -->
+    <section class="encuesta contenedor">
+        <script type="text/javascript" src="//mail.barrio88.com.ar/form/generate.js?id=84"></script>
+    </section>
+
+
     <footer class="footer">
         <img src="./assets/img/wave-for-footer.svg" alt="Wave de separación de contenido" class="wave-footer">
         <div class="contenedor-footer">
             <div class="contenido-footer contenedor">
                 <img src="./assets/img/logoFooter.svg" alt="Logo Barrio 88 para footer" class="logo-footer">
                 <div class="footer-form">
-                    <div id="mauticform_wrapper_barrio88newsletter" class="mauticform_wrapper">
+                    <div id="mauticform_wrapper_barrio88newsletter" class="mauticform-footer">
                         <form autocomplete="false" role="form" method="post" action="https://mail.barrio88.com.ar/form/submit?formId=17"
                             id="mauticform_barrio88newsletter" data-mautic-form="barrio88newsletter" enctype="multipart/form-data">
                             <div class="mauticform-error" id="mauticform_barrio88newsletter_error"></div>
@@ -297,9 +305,9 @@
                                     </div>
                     
                                     <div id="mauticform_barrio88newsletter_submit"
-                                        class="mauticform-row mauticform-button-wrapper mauticform-field-3 mc4wp-form-fields">
+                                        class="">
                                         <button type="submit" name="mauticform[submit]" id="mauticform_input_barrio88newsletter_submit"
-                                            value="" class="mauticform-button sc_button_hover_slide_left">¡Suscribirme!</button>
+                                            value="" class="muatic-button">¡Suscribirme!</button>
                                     </div>
                                     <div id="mauticform_barrio88newsletter_formatocierre"
                                         class="mauticform-row mauticform-freehtml mauticform-field-4">

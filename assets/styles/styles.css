@@ -31,6 +31,12 @@ body {
 
 /* globales */
 
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
 .no-scroll{
     overflow-y: hidden;
 }
@@ -51,12 +57,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h3 {
@@ -420,7 +426,7 @@ img {
     align-items: center;
 }
 
-.mauticform_wrapper{
+.mauticform-sumate{
     grid-area: 1 / 1 / 7 / 7;
     width: 100%;
     padding: 2rem;
@@ -431,33 +437,39 @@ img {
     align-items: center;
 }
 
-.mauticform_wrapper label{
+.mauticform-sumate label{
     display: block;
     width: 100%;
 }
 
-.mauticform_wrapper input {
+.mauticform-sumate input {
     background-color: var(--secundario);
     border: none;
     border-radius: 1rem;
     text-align: center;
-    height: 2.5rem;
+    height: 3rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
 }
 
-.mauticform_wrapper button {
+.mauticform-sumate button {
     background-color: var(--secundario);
     width: 100%;
     border: 2px solid var(--negro);
     border-radius: 1rem;
     height: 2.5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-transform: uppercase;
     transition: all .2s ease-in-out;
 }
 
-.mauticform_wrapper button:hover{
+.mauticform-sumate button:hover{
     color: var(--blanco);
     border: 2px solid var(--blanco);
+}
+
+.muaticform-sumate.mauticform-errormsg{
+    display: none;
 }
 
 /* Main */
@@ -510,7 +522,7 @@ img {
 .div-titulo-clh{
     display: flex;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: .1rem;
@@ -519,7 +531,6 @@ img {
 .titulo-clh{
     color: var(--rojo);
     text-transform: uppercase;
-    width: 22rem;
     margin: 0;
 }
 
@@ -587,6 +598,7 @@ img {
 /* Sección Cards */
 
 .carrousel{
+    height: auto;
     overflow-x: hidden;
 }
 
@@ -600,9 +612,7 @@ img {
     transform: translateX(0%);
 }
 
-
 .botonera-carrousel{
-    width: 100%;
     padding: 1em;
     display: flex;
     flex-flow: row nowrap;
@@ -612,10 +622,10 @@ img {
 }
 
 .boton{
-    width: 4em;
-    height: 4em;
+    width: 25%;
+    padding-bottom: 25%;
     background-image: url(../img/iconoLaBancaInactivo.svg);
-    margin: 1em;
+    background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -691,6 +701,9 @@ img {
     margin: 1rem 0;
 }
 
+/* Sección Encuesta */
+
+
 
 /* Footer */
 
@@ -721,9 +734,12 @@ img {
 
 .footer-form{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-form form {
+.footer-form .mauticform-footer {
     width: 90%;
     font-family: var(--fuenteParrafos);
     font-weight: bold;
@@ -735,9 +751,11 @@ img {
     width: 100%;
     height: 5rem;
     background-color: var(--blanco);
+    text-align: center;
 }
 
-.footer-form .mauticform-button{
+.footer-form .muatic-button{
+    width: 100%;
     font-style: italic;
     color: var(--blanco);
     height: 5rem;
