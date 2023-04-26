@@ -265,8 +265,14 @@
     </section>
 
     <!-- Encuesta -->
-    <section class="encuesta contenedor">
-        <script type="text/javascript" src="//mail.barrio88.com.ar/form/generate.js?id=84"></script>
+    <section class="encuesta">
+        <div class="contenedor-encuesta contenedor">
+            <div class="contenedor-titulo-encuesta">
+                <h2 class="titulo-encuesta">¿Qué opinas?</h2>
+                <img class="logo-titulos" src="./assets/img/barrio88Rojo.svg" alt="Logo barrio 88">
+            </div>
+            <script type="text/javascript" src="//mail.barrio88.com.ar/form/generate.js?id=84"></script>
+        </div>
     </section>
 
 
@@ -300,14 +306,14 @@
                                         class="mauticform-row mauticform-email mauticform-field-2 mauticform-required mc4wp-form-fields"
                                         data-validate="email" data-validation-type="email">
                                         <input id="mauticform_input_barrio88newsletter_email" name="mauticform[email]" value=""
-                                            placeholder="Quiero recibir correos" class="mauticform-input" type="email">
+                                            placeholder="Quiero recibir correos" class="mauticform-input" type="email" required>
                                         <span class="mauticform-errormsg" style="display: none;">Falto que escribas el mail</span>
                                     </div>
                     
                                     <div id="mauticform_barrio88newsletter_submit"
                                         class="">
                                         <button type="submit" name="mauticform[submit]" id="mauticform_input_barrio88newsletter_submit"
-                                            value="" class="muatic-button">¡Suscribirme!</button>
+                                            value="" class="muatic-button mauticform-button sc_button_hover_slide_left">¡Suscribirme!</button>
                                     </div>
                                     <div id="mauticform_barrio88newsletter_formatocierre"
                                         class="mauticform-row mauticform-freehtml mauticform-field-4">

@@ -8,6 +8,7 @@
     --negro: #000000;
     --blanco: #FFFFFF;
     --verde: #27B491;
+    --verdeClaro: #95CD9E;
 }
 
 /* reset */
@@ -472,6 +473,19 @@ img {
     display: none;
 }
 
+.mauticform-message{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    color: var(--rojo) !important;
+}
+
 /* Main */
 
 /* Seccion Somos */
@@ -703,8 +717,54 @@ img {
 
 /* Sección Encuesta */
 
+.encuesta{
+    transform: skewY(-4.2deg);
+    background-color: var(--verdeClaro);
+    padding: 2rem;
+    font-size: 2rem;
+}
 
+.contenedor-encuesta{
+    transform: skewY(4.2deg);
+}
 
+.contenedor-titulo-encuesta{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.titulo-encuesta{
+    color: var(--primario);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.mauticform-radiogrp-row{
+    margin-top: 1rem;
+}
+
+.mauticform-radiogrp-radio{
+    background-color: var(--negro);
+}
+
+#mauticform_encuestaweb2023_message{
+    position: relative;
+    text-align: center;
+    background-color: var(--verdeClaro);
+}
+
+#mauticform_input_encuestaweb2023__votar{
+    background-color: var(--primario);
+    border: none;
+    font-family: var(--fuenteHeading);
+    text-transform: uppercase;
+    color: var(--blanco);
+    border-radius: 5px;
+}
 /* Footer */
 
 
@@ -754,7 +814,7 @@ img {
     text-align: center;
 }
 
-.footer-form .muatic-button{
+.muatic-button{
     width: 100%;
     font-style: italic;
     color: var(--blanco);
@@ -762,6 +822,14 @@ img {
     background-color: var(--rojo);
     border: none;
     text-transform: capitalize;
+    border-radius: .5rem;
+    transition: all .2s ease ;
+    cursor: pointer;
+}
+
+.muatic-button:hover{
+    border: 2px solid var(--blanco);
+    font-size: 2.1rem;
 }
 
 .nav-redes-footer{
