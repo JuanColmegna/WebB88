@@ -718,14 +718,17 @@ img {
 /* Sección Encuesta */
 
 .encuesta{
+    display: block;
     transform: skewY(-4.2deg);
     background-color: var(--verdeClaro);
-    padding: 2rem;
-    font-size: 2rem;
+    padding: 3rem;
+    font-size: 2.6rem;
+    color: var(--blanco);
 }
 
 .contenedor-encuesta{
     transform: skewY(4.2deg);
+    display: block;
 }
 
 .contenedor-titulo-encuesta{
@@ -744,11 +747,18 @@ img {
 }
 
 .mauticform-radiogrp-row{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
-.mauticform-radiogrp-radio{
-    background-color: var(--negro);
+
+#mauticform_encuestaweb2023_pregunta h3{
+    font-family: var(--fuenteParrafos);
+}
+
+#mauticform_encuestaweb2023_pregunta h4{
+    font-family: var(--fuenteParrafos);
+    font-style: italic;
+    font-weight: bold;
 }
 
 #mauticform_encuestaweb2023_message{
@@ -765,15 +775,41 @@ img {
     color: var(--blanco);
     border-radius: 5px;
 }
+
+#mauticform_encuestaweb2023__votar{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#mauticform_encuestaweb2023__votar button{
+    border-radius: .5rem !important;
+}
+
+.encuesta input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid var(--rojo);
+    border-radius: 50%;
+    background-color: var(--secundario);
+    height: 2rem;
+    width: 2rem;
+}
+
+.encuesta input[type="radio"]:checked{
+    background-color: var(--primario);
+}
+
 /* Footer */
 
-
 .footer{
-    line-height: 0;
+    display: block;
+    margin-top: -5rem;
+    background-color: #306586;
 }
 
 .contenedor-footer {
-    background-color: #306586;
+    padding-top: 9rem;
 }
 
 .parrafo-footer{
@@ -783,7 +819,7 @@ img {
 
 .contenido-footer{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
