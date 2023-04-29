@@ -780,6 +780,7 @@ img {
 }
 
 #mauticform_encuestaweb2023__votar{
+    min-width: 20rem;
     max-width: 50%;
     margin: 0 auto;
 }
