@@ -748,17 +748,20 @@ img {
 
 .mauticform-radiogrp-row{
     margin-top: 2rem;
+    line-height: 3rem;
 }
 
 
 #mauticform_encuestaweb2023_pregunta h3{
     font-family: var(--fuenteParrafos);
+    margin: 0;
 }
 
 #mauticform_encuestaweb2023_pregunta h4{
     font-family: var(--fuenteParrafos);
     font-style: italic;
     font-weight: bold;
+    margin: 0;
 }
 
 #mauticform_encuestaweb2023_message{
