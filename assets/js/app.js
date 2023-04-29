@@ -70,3 +70,19 @@ logos.forEach((cadaLogo, i)=>{
     }else if (typeof MauticSDK != 'undefined') {
         MauticSDK.onLoad();
     }
+
+
+//Cerrar menú cuando se aprieta un boton
+
+const enlaces = document.querySelectorAll("nav-enlace");
+
+function clickNav() {
+    nav.classList.remove("visible");
+    noScroll.classList.remove("no-scroll");
+}
+
+//Abrir formulario sumate
+
+function abrirSumate() {
+    sumateAbrir.click();
+}
