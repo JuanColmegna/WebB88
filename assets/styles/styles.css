@@ -257,6 +257,7 @@ img {
         width: 100%;
         white-space: nowrap;
         width: 100%;
+        text-transform: uppercase;
     }    
 
     .nav-enlace:hover, .nav-enlace:focus {
@@ -395,7 +396,7 @@ img {
 @media (min-width: 720px) {
     .hero-title{
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
@@ -653,7 +654,7 @@ img {
 /* Sección Cards */
 
 .cards{
-    max-width: 50rem;
+    max-width: 40rem;
 }
 
 .carrousel{
@@ -743,12 +744,28 @@ img {
     color: var(--primario);
 }
 
-.webp .contenedor-img {
+.webp .card1 .contenedor-img {
     background-image: url(../img/img-card1.webp);
 }
 
-.nowebp .contenedor-img {
+.nowebp .card1 .contenedor-img {
     background-image: url(../img/img-card1.png);
+}
+
+.webp .card2 .contenedor-img {
+    background-image: url(../img/fotoEcomat.webp);
+}
+
+.nowebp .card2 .contenedor-img {
+    background-image: url(../img/fotoEcomat.png);
+}
+
+.webp .card3 .contenedor-img {
+    background-image: url(../img/fotoLaCuadra.webp);
+}
+
+.nowebp .card3 .contenedor-img {
+    background-image: url(../img/fotoLaCuadra.png);
 }
 
 .contenedor-img{
@@ -787,7 +804,7 @@ img {
     font-size: 1.5rem;
     font-style: italic;
     text-decoration: underline;
-    color: var(--primario);
+    color: var(--blanco);
     display: block;
     margin: 1rem 0;
 }
