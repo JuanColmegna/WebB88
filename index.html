@@ -6,20 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina web de Barrio 88">
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg">
     <title>Barrio 88</title>
+
     <!-- Preload -->
     <link rel="preload" href="./assets/styles/fonts.css" as="style" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="./assets/styles/fonts.css">
-
+    
     <link rel="preload" href="./assets/styles/normalize.css" as="style">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
-
+    
     <link rel="preload" href="./assets/styles/styles.css" as="style">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <body id="body">
     <!-- Header -->
+
     <header class="header">
         <!-- Menu Hidden -->
+
         <div class="menu-hidden">
             <div class="menu-link"><a href="#"><img class="logo" src="./assets/img/logo.svg"
                         alt="Logo de Barrio 88"></a>
@@ -29,6 +35,7 @@
         </div>
 
         <!-- Menu Visible -->
+
         <nav class="nav no-margin" id="nav">
             <div class="header-menu">
                 <div class="menu-link"><a href="#"><img class="logo-menu" src="./assets/img/logoNavMenu.svg"
@@ -39,25 +46,30 @@
             </div>
 
             <!-- Navbar -->
+
             <ul class="nav-list no-padding">
-                <li class="nav-text nav-text__primero"><a  onclick="clickNav(), abrirSumate()" class="nav-enlace nav-enlace__rojo" href="#">Súmate</a></li>
-                <li class="nav-text nav-text__segundo"><a  onclick="clickNav()" class="nav-enlace" href="#main">Quiénes somos</a></li>
-                <li class="nav-text nav-text__tercero"><a  onclick="clickNav()" class="nav-enlace" href="#carrousel">Proyectos</a></li>
-                <li class="nav-text nav-text__cuarto"><a  onclick="clickNav()" class="nav-enlace" href="#encuesta">¡Vota!</a></li>
+                <li class="nav-text"><a onclick="clickNav(), abrirSumate()" class="nav-enlace nav-enlace__rojo"
+                        href="#">Súmate</a></li>
+                <li class="nav-text"><a onclick="clickNav()" class="nav-enlace" href="#main">Quiénes somos</a></li>
+                <li class="nav-text"><a onclick="clickNav()" class="nav-enlace" href="#carrousel">Proyectos</a></li>
+                <li class="nav-text"><a onclick="clickNav()" class="nav-enlace" href="#encuesta">¡Vota!</a></li>
 
                 <!-- Redes Sociales -->
+
                 <li class="nav-redes">
                     <ul class="nav-svg no-padding">
-                        <li class="nav-icon"><a href="https://www.instagram.com/barrio88.santafe"><img src="./assets/img/logoInstagram.svg"
-                                    alt="Logo de instagram" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="https://www.facebook.com/barrio88santafe/"><img src="./assets/img/logoFacebook.svg"
-                                    alt="Logo de Facebook" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="https://www.youtube.com/@barrio88santafe"><img src="./assets/img/logoYouTube.svg"
-                                    alt="Logo de YouTube" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="https://twitter.com/Barrio88santafe"><img src="./assets/img/logoTwitter.svg"
-                                    alt="Logo de Twitter" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoWhatsApp.svg"
-                                    alt="Logo de WhatsApp" class="img-redes"></a></li>
+                        <li class="nav-icon"><a href="https://www.instagram.com/barrio88.santafe"><img
+                                    src="./assets/img/logoInstagram.svg" alt="Logo de instagram" class="img-redes"></a>
+                        </li>
+                        <li class="nav-icon"><a href="https://www.facebook.com/barrio88santafe/"><img
+                                    src="./assets/img/logoFacebook.svg" alt="Logo de Facebook" class="img-redes"></a>
+                        </li>
+                        <li class="nav-icon"><a href="https://www.youtube.com/@barrio88santafe"><img
+                                    src="./assets/img/logoYouTube.svg" alt="Logo de YouTube" class="img-redes"></a></li>
+                        <li class="nav-icon"><a href="https://twitter.com/Barrio88santafe"><img
+                                    src="./assets/img/logoTwitter.svg" alt="Logo de Twitter" class="img-redes"></a></li>
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoWhatsApp.svg" alt="Logo de WhatsApp"
+                                    class="img-redes"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -67,158 +79,145 @@
     <!-- Hero -->
 
     <section class="hero">
-        <div class="hero-div contenedor">
-            
-            <!-- Imagen con boton para realizar formulario -->
-            
-            <h2 class="hero-title">
-                Hoy más que nunca <button class="title-button" id="title-button">hagamos barrio</button>
-            </h2>
+        <div class="hero-bg">
+            <div class="hero-div contenedor">
 
-            <div class="formulario-sumate" id="formulario-sumate">
-                
-                <div class="div-boton-cerrar"><button class="boton-cerrar-sumate" id="boton-cerrar-sumate"><img src="./assets/img/botonCerrarSumate.svg" alt="Cerrar formulario sumate"></button></div>
-                
-                <!-- Formulario extraído de mautic -->
+                <!-- Imagen con boton para realizar formulario -->
 
-                <div id="mauticform_wrapper_sumateweb2023" class="mauticform-sumate">
-                    <form autocomplete="false" role="form" method="post"
-                        action="https://mail.barrio88.com.ar/form/submit?formId=83" id="mauticform_sumateweb2023"
-                        data-mautic-form="sumateweb2023" enctype="multipart/form-data" web2023>
-                        <div class="mauticform-error" id="mauticform_sumateweb2023_error"></div>
-                        <div class="mauticform-message" id="mauticform_sumateweb2023_message"></div>
-                        <div class="mauticform-innerform">
-                            <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+                <h2 class="hero-title">
+                    Hoy más que nunca <button class="title-button" id="title-button">hagamos barrio</button>
+                </h2>
 
-                                <div id="mauticform_sumateweb2023_nombre" data-validate="nombre"
-                                    data-validation-type="text"
-                                    >
-                                    <input id="mauticform_input_sumateweb2023_nombre" name="mauticform[nombre]" value="" placeholder="Nombre"
-                                        type="text" required>
-                                </div>
+                <div class="formulario-sumate" id="formulario-sumate">
 
-                                <div id="mauticform_sumateweb2023_apellido" data-validate="apellido"
-                                    data-validation-type="text"
-                                    >
-                                    <input id="mauticform_input_sumateweb2023_apellido" name="mauticform[apellido]"
-                                        value="" type="text" placeholder="Apellido" required>
-                                </div>
+                    <div class="div-boton-cerrar"><button class="boton-cerrar-sumate" id="boton-cerrar-sumate"><img
+                                src="./assets/img/botonCerrarSumate.svg" alt="Cerrar formulario sumate"></button></div>
 
-                                <div id="mauticform_sumateweb2023_telefono" data-validate="telefono"
-                                    data-validation-type="tel"
-                                    >
+                    <!-- Formulario extraído de mautic -->
 
-                                    <input id="mauticform_input_sumateweb2023_telefono" name="mauticform[telefono]"
-                                        value="" type="tel" placeholder="Telefono" required>
-                                </div>
+                    <div id="mauticform_wrapper_sumateweb2023" class="mauticform-sumate">
+                        <form autocomplete="false" role="form" method="post"
+                            action="https://mail.barrio88.com.ar/form/submit?formId=83" id="mauticform_sumateweb2023"
+                            data-mautic-form="sumateweb2023" enctype="multipart/form-data" web2023>
+                            <div class="mauticform-error" id="mauticform_sumateweb2023_error"></div>
+                            <div class="mauticform-message" id="mauticform_sumateweb2023_message"></div>
+                            <div class="mauticform-innerform">
+                                <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
 
-                                <div id="mauticform_sumateweb2023__me_sumo"
-                                    class="mauticform-row mauticform-button-wrapper mauticform-field-4">
-                                    <button type="submit" name="mauticform[_me_sumo]"
-                                        id="mauticform_input_sumateweb2023__me_sumo" value=""
-                                        >✊ ¡Me Sumo!</button>
+                                    <div id="mauticform_sumateweb2023_nombre" data-validate="nombre"
+                                        data-validation-type="text">
+                                        <input id="mauticform_input_sumateweb2023_nombre" name="mauticform[nombre]"
+                                            value="" placeholder="Nombre" type="text" required>
+                                    </div>
+
+                                    <div id="mauticform_sumateweb2023_apellido" data-validate="apellido"
+                                        data-validation-type="text">
+                                        <input id="mauticform_input_sumateweb2023_apellido" name="mauticform[apellido]"
+                                            value="" type="text" placeholder="Apellido" required>
+                                    </div>
+
+                                    <div id="mauticform_sumateweb2023_telefono" data-validate="telefono"
+                                        data-validation-type="tel">
+
+                                        <input id="mauticform_input_sumateweb2023_telefono" name="mauticform[telefono]"
+                                            value="" type="tel" placeholder="Telefono" required>
+                                    </div>
+
+                                    <div id="mauticform_sumateweb2023__me_sumo"
+                                        class="mauticform-row mauticform-button-wrapper mauticform-field-4">
+                                        <button type="submit" name="mauticform[_me_sumo]"
+                                            id="mauticform_input_sumateweb2023__me_sumo" value="">✊ ¡Me Sumo!</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <input type="hidden" name="mauticform[formId]" id="mauticform_sumateweb2023_id" value="83">
-                        <input type="hidden" name="mauticform[return]" id="mauticform_sumateweb2023_return" value="">
-                        <input type="hidden" name="mauticform[formName]" id="mauticform_sumateweb2023_name" value="sumateweb2023">
-                    </form>
-                </div> <!-- aquí termina el formulario -->
+                            <input type="hidden" name="mauticform[formId]" id="mauticform_sumateweb2023_id" value="83">
+                            <input type="hidden" name="mauticform[return]" id="mauticform_sumateweb2023_return"
+                                value="">
+                            <input type="hidden" name="mauticform[formName]" id="mauticform_sumateweb2023_name"
+                                value="sumateweb2023">
+                        </form>
+                    </div> <!-- aquí termina el formulario -->
+                </div>
             </div>
     </section>
 
     <!-- Main -->
-    <main class="main contenedor" id="main">
+    <main class="main" id="main">
         <section class="quienes-somos">
             <div class="titulo">
-                <h1 class="titulo-principal">
+                <h1 class="titulo-principal animate__animated animate__fadeInLeft">
                     Somos
                 </h1>
-                <img  class="logo-titulos" src="./assets/img/barrio88Rojo.svg" alt="Logo Barrio 88">
+                <img class="logo-titulos animate__animated animate__fadeInLeft" src="./assets/img/barrio88Rojo.svg" alt="Logo Barrio 88">
             </div>
-            <p class="parrafo-main">
-                Vecinos y vecinas que queremos cambiar la realidad de nuestra ciudad.
-                Sabemos que la política tiene que estar más cerca de la gente.
+            <p class="parrafo-main animate__animated animate__fadeInLeft">
+                Barrio 88 nace como una alternativa a los partidos tradicionales. Trabajamos para aportar soluciones a
+                los problemas reales que tenemos en los barrios, a través de proyectos creativos e innovadores.
             </p>
-            <p class="parrafo-main">
-                Queremos escucharlos y darles soluciones concretas. 
-            </p>
-            <p class="parrafo-main">
-                <span class="texto-rojo">No tenemos nada que ver con los que nos trajeron hasta acá.</span>
-            </p>
-            <p class="parrafo-main">
-                Para cambiar las cosas, hay que darle lugar a nuevas opciones. Depende de nosotros.
-            </p>
-            <p class="parrafo-main">
-                <span class="texto-rojo"> Hoy más que nunca: ¡Hagamos Barrio!</span>
+            <p class="parrafo-main animate__animated animate__fadeInLeft">
+                No tenemos nada que ver con los que nos trajeron hasta acá. Para cambiar las cosas, hay que darle lugar
+                a nuevas opciones. Depende de nosotros. Hoy más que nunca: ¡Hagamos Barrio!
             </p>
         </section>
-        
+
     </main>
 
     <!-- Otra forma de hacer política -->
     <section class="cards contenedor">
         <div class="div-titulo-cards">
-            <h2 class="titulo-cards">Otra forma de hacer política <img  class="logo-titulos" src="./assets/img/barrio88Azul.svg" alt="Logo Barrio 88"></h2>
+            <h2 class="titulo-cards animate__animated animate__fadeInLeft">Otra forma de hacer política <img class="logo-titulos"
+                    src="./assets/img/barrio88Azul.svg" alt="Logo Barrio 88"></h2>
         </div>
         <div class="carrousel" id="carrousel">
             <div class="contenedor-carrousel">
-                <div class="card">
+                <div class="card card1">
                     <div class="contenedor-img"></div>
                     <div class="texto-card">
                         <h3 class="titulo-card">
                             La Banca
                         </h3>
                         <p class="parrafo-card">
-                            Con Guille Jerez como Concejal llevamos las demandas de los barrios y generamos los debates y las propuestas necesarios para vehiculizar nuestro proyecto de ciudad <span class="parrafo-negrita">#LaBancaActiva</span>
+                            Con Guille Jerez como Concejal, llevamos las demandas de nuestras vecinas y vecinos al
+                            Concejo: generamos los debates y las propuestas necesarias para hacer posible un nuevo
+                            proyecto de ciudad.¡Solo es posible con la participación de todos!
                         </p>
                         <a href="#" class="enlace-card">Ver más</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card2">
                     <div class="contenedor-img"></div>
                     <div class="texto-card">
                         <h3 class="titulo-card">
-                            La Banca
+                            Ecomat
                         </h3>
                         <p class="parrafo-card">
-                            Con Guille Jerez como Concejal llevamos las demandas de los barrios y generamos los debates y las propuestas necesarios para vehiculizar nuestro proyecto de ciudad <span class="parrafo-negrita">#LaBancaActiva</span>
+                            Conformamos una Cooperativa de reciclaje que convierte residuos plásticos en adoquines para
+                            asfaltar calles y veredas. Buscamos reciclar para urbanizar la ciudad, generando además
+                            empleos verdes. ¡Podes sumar a asfaltar nuestros barrios!
                         </p>
                         <a href="#" class="enlace-card">Ver más</a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card3">
                     <div class="contenedor-img"></div>
                     <div class="texto-card">
                         <h3 class="titulo-card">
-                            La Banca
+                            La Cuadra
                         </h3>
                         <p class="parrafo-card">
-                            Con Guille Jerez como Concejal llevamos las demandas de los barrios y generamos los debates y las propuestas necesarios para vehiculizar nuestro proyecto de ciudad <span class="parrafo-negrita">#LaBancaActiva</span>
-                        </p>
-                        <a href="#" class="enlace-card">Ver más</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="contenedor-img"></div>
-                    <div class="texto-card">
-                        <h3 class="titulo-card">
-                            La Banca
-                        </h3>
-                        <p class="parrafo-card">
-                            Con Guille Jerez como Concejal llevamos las demandas de los barrios y generamos los debates y las propuestas necesarios para vehiculizar nuestro proyecto de ciudad <span class="parrafo-negrita">#LaBancaActiva</span>
+                            La Santa Fe del Futuro requiere de encontrarnos. Por eso, La Cuadra es el espacio donde
+                            confluyen la cultura, el diálogo conjunto, las ideas, y el pensamiento crítico. Un lugar
+                            donde encontrarnos para impulsar propuestas transformadoras. ¡Sumá tus ideas!
                         </p>
                         <a href="#" class="enlace-card">Ver más</a>
                     </div>
                 </div>
             </div> <!-- fin carrousel -->
             <ul class="botonera-carrousel">
-                <li class="boton activo"></li>
-                <li class="boton"></li>
-                <li class="boton"></li>
-                <li class="boton"></li>
+                <li class="boton botonLB activo"></li>
+                <li class="boton botonEM"></li>
+                <li class="boton botonLC"></li>
             </ul>
         </div>
     </section>
@@ -241,61 +240,67 @@
                 <img src="./assets/img/logoFooter.svg" alt="Logo Barrio 88 para footer" class="logo-footer">
                 <div class="footer-form">
                     <div id="mauticform_wrapper_barrio88newsletter" class="mauticform-footer">
-                        <form autocomplete="false" role="form" method="post" action="https://mail.barrio88.com.ar/form/submit?formId=17"
-                            id="mauticform_barrio88newsletter" data-mautic-form="barrio88newsletter" enctype="multipart/form-data">
+                        <form autocomplete="false" role="form" method="post"
+                            action="https://mail.barrio88.com.ar/form/submit?formId=17"
+                            id="mauticform_barrio88newsletter" data-mautic-form="barrio88newsletter"
+                            enctype="multipart/form-data">
                             <div class="mauticform-error" id="mauticform_barrio88newsletter_error"></div>
                             <div class="mauticform-message" id="mauticform_barrio88newsletter_message"></div>
                             <div class="mauticform-innerform">
-                    
-                    
+
+
                                 <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
-                    
+
                                     <div id="mauticform_barrio88newsletter_formato"
                                         class="mauticform-row mauticform-freehtml mauticform-field-1">
-                                        <div id="mauticform_input_barrio88newsletter_formato" name="mauticform[formato]" value=""
-                                            class="mauticform-freehtml">
-                                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-5709" method="post" data-id="5709"
-                                                data-name="Subscribite"></form>
+                                        <div id="mauticform_input_barrio88newsletter_formato" name="mauticform[formato]"
+                                            value="" class="mauticform-freehtml">
+                                            <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-5709" method="post"
+                                                data-id="5709" data-name="Subscribite"></form>
                                             <div class="mc4wp-form-fields"></div>
                                         </div>
                                     </div>
-                    
+
                                     <div id="mauticform_barrio88newsletter_email"
                                         class="mauticform-row mauticform-email mauticform-field-2 mauticform-required mc4wp-form-fields"
                                         data-validate="email" data-validation-type="email">
-                                        <input id="mauticform_input_barrio88newsletter_email" name="mauticform[email]" value=""
-                                            placeholder="Quiero recibir correos" class="mauticform-input" type="email" required>
-                                        <span class="mauticform-errormsg" style="display: none;">Falto que escribas el mail</span>
+                                        <input id="mauticform_input_barrio88newsletter_email" name="mauticform[email]"
+                                            value="" placeholder="Quiero recibir correos" class="mauticform-input"
+                                            type="email" required>
+                                        <span class="mauticform-errormsg" style="display: none;">Falto que escribas el
+                                            mail</span>
                                     </div>
-                    
-                                    <div id="mauticform_barrio88newsletter_submit"
-                                        class="">
-                                        <button type="submit" name="mauticform[submit]" id="mauticform_input_barrio88newsletter_submit"
-                                            value="" class="muatic-button mauticform-button sc_button_hover_slide_left">¡Suscribirme!</button>
+
+                                    <div id="mauticform_barrio88newsletter_submit" class="">
+                                        <button type="submit" name="mauticform[submit]"
+                                            id="mauticform_input_barrio88newsletter_submit" value=""
+                                            class="muatic-button mauticform-button sc_button_hover_slide_left">¡Suscribirme!</button>
                                     </div>
                                     <div id="mauticform_barrio88newsletter_formatocierre"
                                         class="mauticform-row mauticform-freehtml mauticform-field-4">
-                                        <div id="mauticform_input_barrio88newsletter_formatocierre" name="mauticform[formatocierre]"
-                                            value="" class="mauticform-freehtml">
+                                        <div id="mauticform_input_barrio88newsletter_formatocierre"
+                                            name="mauticform[formatocierre]" value="" class="mauticform-freehtml">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                    </div> 
+                    </div>
                 </div> <!-- Acá termina el formlurario -->
                 <div class="nav-redes-footer">
                     <ul class="nav-svg no-padding">
-                        <li class="nav-icon"><a href="https://www.instagram.com/barrio88.santafe"><img src="./assets/img/logoInstagram.svg"
-                                    alt="Logo de instagram" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="https://www.facebook.com/barrio88santafe/"><img src="./assets/img/logoFacebook.svg"
-                                    alt="Logo de Facebook" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="https://www.youtube.com/@barrio88santafe"><img src="./assets/img/logoYouTube.svg"
-                                    alt="Logo de YouTube" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="https://twitter.com/Barrio88santafe"><img src="./assets/img/logoTwitter.svg"
-                                    alt="Logo de Twitter" class="img-redes"></a></li>
-                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoWhatsApp.svg"
-                                    alt="Logo de WhatsApp" class="img-redes"></a></li>
+                        <li class="nav-icon"><a href="https://www.instagram.com/barrio88.santafe"><img
+                                    src="./assets/img/logoInstagram.svg" alt="Logo de instagram" class="img-redes"></a>
+                        </li>
+                        <li class="nav-icon"><a href="https://www.facebook.com/barrio88santafe/"><img
+                                    src="./assets/img/logoFacebook.svg" alt="Logo de Facebook" class="img-redes"></a>
+                        </li>
+                        <li class="nav-icon"><a href="https://www.youtube.com/@barrio88santafe"><img
+                                    src="./assets/img/logoYouTube.svg" alt="Logo de YouTube" class="img-redes"></a></li>
+                        <li class="nav-icon"><a href="https://twitter.com/Barrio88santafe"><img
+                                    src="./assets/img/logoTwitter.svg" alt="Logo de Twitter" class="img-redes"></a></li>
+                        <li class="nav-icon"><a href="#"><img src="./assets/img/logoWhatsApp.svg" alt="Logo de WhatsApp"
+                                    class="img-redes"></a></li>
                     </ul>
                 </div>
                 <p class="parrafo-footer">

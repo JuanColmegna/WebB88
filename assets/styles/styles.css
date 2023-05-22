@@ -69,6 +69,12 @@ h3 {
     font-size: 2.8rem;
 }
 
+@media (min-width: 720px) {
+    h1, h2{
+        font-size: 6rem;
+    }
+}
+
 img {
     max-width: 100%;
 }
@@ -100,16 +106,6 @@ img {
     font-size: 2rem;
 }
 
-@media (min-width: 1200px) {
-    .header{
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        gap: 0px 0px;
-        width: min(90%, 120rem);
-        margin: 0 auto;
-    }
-}
-
 .header-menu{
     display: flex;
     justify-content: center;
@@ -117,6 +113,12 @@ img {
 }
 
 @media (min-width: 1200px) {
+    .header{
+        max-width: 140rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
     .header-menu {
         display: none;
     }
@@ -152,10 +154,7 @@ img {
 
 @media (min-width: 1200px) {
     .menu-hidden{
-        grid-area: 1 / 2 / 2 / 3;}
-
-    .menu-link {
-        z-index: 3;
+        max-width: 40rem
     }
 }
 
@@ -194,12 +193,9 @@ img {
         opacity: 1;
         visibility: visible;
         position: inherit;
-        width: 100%;
-        margin: auto;
         background-color: inherit;
         padding: 0;
         box-shadow: none;
-        grid-area: 1 / 1 / 2 / 4;
     }
 }
 
@@ -218,27 +214,12 @@ img {
 
 @media (min-width: 1200px) {
     .nav-list{
-        display: grid; 
-        grid-template-columns: repeat(6, 1fr); 
-        grid-template-rows: 1fr; 
-        gap: 0px 0px; 
-        text-align: center;
-    }
-
-    .nav-text__primero{
-        grid-area: 1 / 6 / 2 / 7;
-    }
-    
-    .nav-text__segundo{
-        grid-area: 1 / 1 / 2 / 2;
-    }
-    
-    .nav-text__tercero{
-        grid-area: 1 / 5 / 2 / 6;
-    }
-    
-    .nav-text__cuarto{
-        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0;
+        margin: 0;
+        max-width: 50%;
+        gap: 5rem;
     }
 }
 
@@ -258,12 +239,30 @@ img {
 @media (min-width: 1200px) {
     .nav-enlace{
         color: var(--primario);
+        text-align: center;
+        padding-bottom: .5rem;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
     }
-
     .nav-enlace__rojo {
         color: var(--rojo);
-        font-style: italic;
     }
+    .nav-text{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        white-space: nowrap;
+        width: 100%;
+    }    
+
+    .nav-enlace:hover, .nav-enlace:focus {
+        background-size: 100% 2px;
+    }
+    
 }
 
 .nav-text:first-child{
@@ -321,24 +320,31 @@ img {
 
 /* Hero */
 
-.webp .hero {
+.webp .hero-bg {
     background-image: url(../img/hero.webp);
 }
 
-.nowebp .hero{
+.nowebp .hero-bg{
     background-image: url(../img/hero.jpg);
 }
 
 .hero {
     transform: skewY(-4.2deg);
     height: 30rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     margin: 1rem auto;
     color: var(--blanco);
     text-transform: uppercase;
+    background-color: var(--primario);
 }
+
+.hero-bg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 @media (min-width: 480px) {
     .hero{
@@ -350,6 +356,16 @@ img {
         font-size: 4rem;
     }
 }
+
+@media (min-width: 760px) {
+    .hero-bg{
+        background-size: contain ;
+    }
+    .hero-div{
+        padding: 0;
+    }
+}
+
 
 @media (min-width: 1200px) {
     .hero{
@@ -376,6 +392,13 @@ img {
     font-size: 2rem;
 }
 
+@media (min-width: 720px) {
+    .hero-title{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
 .title-button{
     background-color: inherit;
     color: var(--blanco);
@@ -385,10 +408,12 @@ img {
     cursor: pointer;
 }
 
+/* Formulario Sumate */
+
 .formulario-sumate{
     transform: skewY(4.2deg);
     grid-area: 1 / 1 / 4 / 4;
-    background-color: #306586;
+    background-color: var(--rojo);
     border-radius: 5rem;
     display: flex;
     justify-content: center;
@@ -398,6 +423,8 @@ img {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100%;
 }
 
 .formulario-sumate.visible{
@@ -405,8 +432,6 @@ img {
     visibility: visible;
     z-index: 1;
 }
-
-/* Botón Cerrar Formulario */
 
 .div-boton-cerrar{
     grid-area: 1 / 6 / 2 / 7;
@@ -452,6 +477,14 @@ img {
     text-transform: uppercase;
 }
 
+@media (min-width: 720px) {
+    .mauticform-sumate input{
+        width: 50rem;
+        height: 6rem;
+        font-size: 4rem;
+    }
+}
+
 .mauticform-sumate button {
     background-color: var(--secundario);
     width: 100%;
@@ -461,6 +494,13 @@ img {
     margin: 2rem 0;
     text-transform: uppercase;
     transition: all .2s ease-in-out;
+}
+
+@media (min-width: 720px) {
+    .mauticform-sumate button{
+        height: 6rem;
+        font-size: 4rem;
+    }
 }
 
 .mauticform-sumate button:hover{
@@ -491,6 +531,8 @@ img {
 .main {
     margin: 4rem auto;
     text-align: center;
+    max-width: 70rem;
+    width: 90%;
 }
 
 .titulo{
@@ -518,12 +560,12 @@ img {
     margin: 0 auto 1.5rem auto;
     font-weight: 400;
     line-height: 3rem;
-    text-align: center;
-    max-width: 50rem;
 }
 
-.texto-rojo{
-    color: var(--rojo);
+@media (min-width: 720px) {
+    .parrafo-main{
+        font-size: 3rem;
+    }
 }
 
 /* Seccion Como Lo Hacemos */
@@ -610,19 +652,29 @@ img {
 
 /* Sección Cards */
 
+.cards{
+    max-width: 50rem;
+}
+
 .carrousel{
     height: auto;
     overflow-x: hidden;
 }
 
 .contenedor-carrousel{
-    width: 400%;
+    width: 300%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     transition: all .6s ease-in-out;
     transform: translateX(0%);
+}
+
+@media (min-width: 380px) {
+    .contenedor-carrousel{
+        height: 50rem;
+    }
 }
 
 .botonera-carrousel{
@@ -634,30 +686,56 @@ img {
     list-style: none;
 }
 
+/* botones */
+
 .boton{
     width: 25%;
     padding-bottom: 25%;
-    background-image: url(../img/iconoLaBancaInactivo.svg);
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
-.boton.activo{
+.botonLB{
+    background-image: url(../img/iconoLaBancaInactivo.svg);
+}
+
+.botonEM{
+    background-image: url(../img/iconoEcomatInactivo.svg);
+}
+
+.botonLC{
+    background-image: url(../img/iconoLaCuadraInactivo.svg);
+}
+
+.botonLB.activo{
     background-image: url(../img/iconoLaBancaActivo.svg);
 }
 
+.botonEM.activo{
+    background-image: url(../img/iconoEcomatActivo.svg);
+}
+
+.botonLC.activo{
+    background-image: url(../img/iconoLaCuadraActivo.svg);
+}
 
 .card{
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     margin: 1rem;
-    background-color: var(--verde);
     transform: skewY(-4.2deg);
     border-radius: 2rem;
     display: flex;
     flex-flow: row wrap;
 }
 
+.card1, .card3{
+    background-color: var(--verde);
+}
+
+.card2{
+    background-color: var(--primario);
+}
 
 .titulo-cards{
     text-align: center;
@@ -811,8 +889,15 @@ img {
     background-color: #306586;
 }
 
+@media (min-width: 1200px) {
+    .footer{
+        margin-top: -8rem;
+    }
+}
+
 .contenedor-footer {
     padding-top: 9rem;
+    max-width: 70rem;
 }
 
 .parrafo-footer{

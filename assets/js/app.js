@@ -40,7 +40,7 @@ const logos = document.querySelectorAll('.boton');
 logos.forEach((cadaLogo, i)=>{
     logos[i].addEventListener('click', ()=>{
         let posicion = i;
-        let operacion = posicion * -25;
+        let operacion = posicion * -33.33;
 
         carrousel.style.transform = `translateX(${operacion}%)`
 
